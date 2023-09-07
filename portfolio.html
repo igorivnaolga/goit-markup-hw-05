@@ -67,20 +67,20 @@
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
           <ul class="list filter">
-            <li class="filter-btn">
-              <button type="button" class="btn">All</button>
+            <li class="filter-item">
+              <button type="button" class="btn filter-btn">All</button>
             </li>
-            <li class="filter-btn">
-              <button type="button" class="btn">Web Site</button>
+            <li class="filter-item">
+              <button type="button" class="btn filter-btn">Web Site</button>
             </li>
-            <li class="filter-btn">
-              <button type="button" class="btn">App</button>
+            <li class="filter-item">
+              <button type="button" class="btn filter-btn">App</button>
             </li>
-            <li class="filter-btn">
-              <button type="button" class="btn">Design</button>
+            <li class="filter-item">
+              <button type="button" class="btn filter-btn">Design</button>
             </li>
-            <li class="filter-btn">
-              <button type="button" class="btn">Marketing</button>
+            <li class="filter-item">
+              <button type="button" class="btn filter-btn">Marketing</button>
             </li>
           </ul>
 
@@ -311,37 +311,77 @@
         </div>
 
         <div class="social-media-block">
-          <p class="social-media-header">Social media</p>
+          <p class="social-subscribe-header">Social media</p>
           <ul class="footer-social-list list">
             <li class="footer-social-list-item">
-              <a href="" class="footer-social-list-link">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer-social-list-link"
+              >
                 <svg class="footer-social-list-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-list-item">
-              <a href="" class="footer-social-list-link">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="footer-social-list-link"
+              >
                 <svg class="footer-social-list-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-list-item">
-              <a href="" class="footer-social-list-link">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer-social-list-link"
+              >
                 <svg class="footer-social-list-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-list-item">
-              <a href="" class="footer-social-list-link">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="footer-social-list-link"
+              >
                 <svg class="footer-social-list-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="subscribe-form-container">
+          <p class="social-subscribe-header">Subscribe</p>
+          <form class="subscribe-form">
+            <label
+              for="subscribe-user-email"
+              class="subscribe-user-email-label"
+            >
+              <input
+                id="subscribe-user-email"
+                type="email"
+                class="subscribe-form-email"
+                name="subscribe-form-email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="btn subscribe-form-btn">
+              Subscribe
+              <svg class="subscribe-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
