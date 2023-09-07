@@ -206,7 +206,7 @@ body {
   text-align: center;
   color: var(--background-color);
 }
-.hero-btn {
+.service-btn {
   cursor: pointer;
   display: block;
   margin: 0 auto;
@@ -226,8 +226,8 @@ body {
   color: var(--background-color);
   transition: background-color var(--transition-dur-func);
 }
-.hero-btn:hover,
-.hero-btn:focus {
+.service-btn:hover,
+.service-btn:focus {
   background-color: var(--pressed-color);
 }
 
@@ -520,6 +520,7 @@ Team */
   transform: translate(-50%, -50%);
   width: 408px;
   min-height: 584px;
+  padding: 72px 24px 24px 24px;
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -558,3 +559,151 @@ Team */
 .modal-close-btn:focus .modal-close-btn-icon {
   fill: var(--background-color);
 }
+
+/* Modal Form */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form-field {
+  display: block;
+  margin-bottom: 4px;
+}
+.modal-form-header {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+  margin-bottom: 16px;
+}
+.modal-form-input-content {
+  position: relative;
+}
+.modal-form-input {
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  outline: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding-left: 38px;
+  transition: border-color var(--transition-dur-func);
+}
+.modal-form-input:focus {
+  border-color: var(--brand-color);
+}
+.modal-form-input:focus + .modal-form-input-icon {
+  fill: var(--brand-color);
+}
+.modal-form-input-wrapper {
+  display: block;
+  position: relative;
+  margin-bottom: 8px;
+}
+.modal-form-comment-wrapper {
+  display: block;
+  margin-bottom: 16px;
+}
+.modal-form-field {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--customers-icon-color);
+  margin-bottom: 4px;
+}
+.modal-form-input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--secondary-color);
+  transition: fill var(--transition-dur-func);
+}
+.modal-form-input-icon:hover,
+.modal-form-input-icon:focus {
+  fill: var(--brand-color);
+}
+
+.modal-form-input-desc {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--customers-icon-color);
+  margin-bottom: 4px;
+}
+.modal-form-comment {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  background-color: transparent;
+  outline: transparent;
+  color: rgba(46, 47, 66, 0.4);
+  transition: border-color var(--transition-dur-func);
+  border: 1px solid rgba(46, 47, 66, 0.2);
+}
+.modal-form-comment:focus {
+  outline: none;
+  border-color: var(--brand-color);
+}
+.modal-form-checkbox-wrapper {
+  margin-bottom: 24px;
+}
+.modal-form-check-desc {
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--customers-icon-color);
+  margin-bottom: 24px;
+  transition: background-color var(--transition-dur-func),
+    opacity var(--transition-dur-func);
+}
+
+.modal-form-fake-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  content: '';
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  fill: transparent;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+.modal-form-fake-checkbox-icon {
+  opacity: 0;
+}
+.modal-form-check:checked + .modal-form-check-desc .modal-form-fake-checkbox {
+  background-color: var(--pressed-color);
+  border: none;
+  border-color: var(--pressed-color);
+  fill: var(--background-color);
+}
+
+.modal-form-check:checked
+  + .modal-form-check-desc
+  .modal-form-fake-checkbox-icon {
+  opacity: 1;
+}
+
+.link-policy {
+  color: var(--customers-icon-color);
+}
+
+/* Modal Form */
