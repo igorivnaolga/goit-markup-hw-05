@@ -604,9 +604,11 @@ Team */
   display: flex;
   flex-direction: column;
 }
+.modal-form-wrapper {
+  margin-bottom: 8px;
+}
 .modal-form-field {
   display: block;
-  margin-bottom: 8px;
 }
 .modal-form-header {
   font-style: normal;
@@ -727,7 +729,7 @@ Team */
   border-radius: 2px;
   margin-right: 8px;
   transition: background-color var(--transition-dur-func),
-    border 250ms var(--transition-dur-func), fill var(--transition-dur-func);
+    border var(--transition-dur-func), fill var(--transition-dur-func);
 }
 .modal-form-fake-checkbox-icon {
   opacity: 0;
@@ -736,7 +738,6 @@ Team */
 .modal-form-check:checked + .modal-form-check-desc .modal-form-fake-checkbox {
   background-color: var(--pressed-color);
   border: none;
-  border-color: var(--pressed-color);
   fill: var(--light-color);
 }
 .modal-form-check:focus-visible
