@@ -711,6 +711,7 @@ Team */
   letter-spacing: 0.04em;
   color: var(--customers-icon-color);
   margin-bottom: 24px;
+  user-select: none;
   transition: background-color var(--transition-dur-func),
     opacity var(--transition-dur-func);
 }
@@ -737,6 +738,12 @@ Team */
   border-color: var(--pressed-color);
   fill: var(--background-color);
 }
+.modal-form-check:focus-visible
+  + .modal-form-check-desc
+  .modal-form-fake-checkbox {
+  outline: 2px solid rgb(77, 90, 229, 0.3);
+  outline-offset: 1px;
+}
 
 .modal-form-check:checked
   + .modal-form-check-desc
@@ -745,7 +752,7 @@ Team */
 }
 
 .link-policy {
-  color: var(--customers-icon-color);
+  color: var(--brand-color);
 }
 
 /* Modal Form */
