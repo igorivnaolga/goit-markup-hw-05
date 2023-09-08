@@ -501,16 +501,13 @@ Team */
 }
 .subscribe-form {
   display: flex;
-}
-.subscribe-user-email-label {
-  display: flex;
-  margin-right: 24px;
+  gap: 24px;
 }
 .subscribe-form-email {
   display: flex;
   align-items: center;
   height: 40px;
-  max-width: 264px;
+  width: 264px;
   padding-left: 16px;
   font-size: 12px;
   line-height: 1.5;
@@ -518,7 +515,7 @@ Team */
   color: var(--background-color);
   border: 1px solid var(--background-color);
   border-radius: 4px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
 }
 .subscribe-form-email::placeholder {
@@ -609,7 +606,7 @@ Team */
 }
 .modal-form-field {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 .modal-form-header {
   font-style: normal;
@@ -652,12 +649,12 @@ Team */
 }
 .modal-form-field {
   display: block;
+  margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--customers-icon-color);
-  margin-bottom: 4px;
 }
 .modal-form-input-icon {
   position: absolute;
@@ -694,7 +691,7 @@ Team */
   outline: transparent;
   color: rgba(46, 47, 66, 0.4);
   transition: border-color var(--transition-dur-func);
-  border: 1px solid rgba(46, 47, 66, 0.2);
+  border: 1px solid rgba(46, 47, 66, 0.4);
 }
 .modal-form-comment:focus {
   outline: none;
@@ -704,6 +701,7 @@ Team */
   margin-bottom: 24px;
 }
 .modal-form-check-desc {
+  display: block;
   text-align: center;
   font-weight: 400;
   font-size: 12px;
@@ -728,15 +726,18 @@ Team */
   fill: transparent;
   border-radius: 2px;
   margin-right: 8px;
+  transition: background-color var(--transition-dur-func),
+    border 250ms var(--transition-dur-func), fill var(--transition-dur-func);
 }
 .modal-form-fake-checkbox-icon {
   opacity: 0;
+  transition: opacity var(--transition-dur-func);
 }
 .modal-form-check:checked + .modal-form-check-desc .modal-form-fake-checkbox {
   background-color: var(--pressed-color);
   border: none;
   border-color: var(--pressed-color);
-  fill: var(--background-color);
+  fill: var(--light-color);
 }
 .modal-form-check:focus-visible
   + .modal-form-check-desc
