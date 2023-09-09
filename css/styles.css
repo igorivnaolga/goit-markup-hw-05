@@ -526,7 +526,7 @@ Team */
   justify-content: center;
   align-items: center;
   padding: 8px 24px;
-  gap: 16px;
+  margin-bottom: 0;
   height: 40px;
   min-width: 165px;
 }
@@ -705,12 +705,10 @@ Team */
 .modal-form-check-desc {
   display: block;
   text-align: center;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--customers-icon-color);
-  margin-bottom: 24px;
   user-select: none;
   transition: background-color var(--transition-dur-func),
     opacity var(--transition-dur-func);
@@ -755,6 +753,9 @@ Team */
 
 .link-policy {
   color: var(--brand-color);
+}
+.modal-send-btn {
+  margin-bottom: 0;
 }
 
 /* Modal Form */
